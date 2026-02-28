@@ -6,14 +6,14 @@ namespace COMP003A.Assignment7
     {
         static void Main(string[] args)
         {
-            List<int> scores = new List<int>() { 85, 90, 78, 92, 88 };
+            List<int> scores = new List<int>() { 85, 90, 78, 92, 88 }; // list of scores to analyze
             int choice = 0;
                 Console.WriteLine("\nStudent score Analyzer");
                 Console.WriteLine("1. Display all scores");
                 Console.WriteLine("2. show total");
                 Console.WriteLine("3. show Average");
                 Console.WriteLine("4. Exit");
-            while (choice != 4)
+            while (choice != 4) // loop until the user chooses to exit
             {
                 Console.WriteLine();
                 Console.Write("Enter your choice:");
@@ -39,7 +39,7 @@ namespace COMP003A.Assignment7
                     else if (choice == 2)
                     {
                         int total = 0;
-foreach (int score in scores)
+foreach (int score in scores) // goes through each score in the list of scores
                         {
                             total += score;
                         }
@@ -48,11 +48,11 @@ foreach (int score in scores)
                     else if (choice == 3)
                     {
                         int total = 0;
-                        foreach (int score in scores)
+                        foreach (int score in scores) // calculate the total score
                         {
-                            total += score;
+                            total += score; // adds each score to the total
                         }
-                        double average = (double)total / scores.Count;
+                        double average = (double)total / scores.Count; // calculates the average score
                         Console.WriteLine("\nAverage:" + average);
                     }
                     else if (choice == 4)
