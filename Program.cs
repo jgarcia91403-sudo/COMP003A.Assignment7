@@ -55,6 +55,17 @@ foreach (int score in scores)
                         double average = (double)total / scores.Count;
                         Console.WriteLine("\nAverage:" + average);
                     }
+                    else if (choice == 4)
+                    {
+                        Console.WriteLine("\nProgram ended.");
+                    }
+                }
+                else
+                {
+                    if (choice != 0)
+                    {
+                        Console.WriteLine("Invalid menu option please enter a number between 1 and 4.");
+                    }
                 }
             }
         }
